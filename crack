@@ -1,0 +1,30 @@
+from random import randint
+
+# Prompt user for a password
+user_password = input("Enter your password: ")
+
+# Expanded character set: lowercase, UPPERCASE, digits and special symbols
+password_chars = (
+    'abcdefghijklmnopqrstuvwxyz'      # lowercase
+    'ABCDEFGHIJKLMNOPQRSTUVWXYZ'      # uppercase
+    '0123456789'                      # digits
+    '!@#$%^&*()-_=+[]{}|;:,.<>?/~`'   # special characters
+)
+
+# Initialize crack attempt
+crack = ""
+
+# Brute‑force guessing loop
+attempts = 0
+while crack != user_password:
+    crack = ""
+    for i in range(len(user_password)):
+        idx = randint(0, len(password_chars) - 1)
+        crack += password_chars[idx]
+    print("Trying:", crack)
+    attempts += 1
+
+# Password found
+print("Password cracked:", crack)
+print("Attempts:", attempts)
+
