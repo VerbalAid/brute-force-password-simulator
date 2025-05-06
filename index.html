@@ -1,0 +1,21 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Password Simulator</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 400px; margin: 2rem auto; }
+    label, input, button { display: block; width: 100%; margin-bottom: 1rem; }
+    button { padding: 0.5rem; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Brute‑Force Simulator</h1>
+  <form action="/crack" method="post">
+    <label for="pwd">Enter Password:</label>
+    <input type="password" id="pwd" name="password" required minlength="1">
+    <button type="submit">Start Simulation</button>
+  </form>
+</body>
+</html>
