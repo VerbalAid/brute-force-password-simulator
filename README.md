@@ -1,3 +1,12 @@
+## Project Overview
+
+This repository demonstrates a brute‑force password‑cracking simulator built in pure Python. It’s designed for educational purposes, illustrating core programming concepts such as loops, string manipulation, and randomisation. It helps to understand the practical challenges of brute‑force attacks—complexity, performance limitations, and the importance of robust password policies in real‑world applications.  
+
+## Disclaimer
+
+⚠️ **Educational Use Only:** Do **not** attempt to use this tool against any system or credentials without explicit authorization. Respect privacy and legal boundaries at all times.  
+
+
 ## Key Steps & Logic
 
 1. **Random Index Selection**  
